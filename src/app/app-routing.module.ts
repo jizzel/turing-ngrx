@@ -10,9 +10,10 @@ import { PageNotFoundComponent } from './home/page-not-found.component';
 const appRoutes: Routes = [
   {
     path: '',
+    title: 'Home',
     component: ShellComponent,
     children: [
-      { path: 'welcome', component: WelcomeComponent },
+      { path: 'welcome', title: 'Welcome', component: WelcomeComponent },
       {
         path: 'products',
         // canActivate: [AuthGuard],
@@ -22,7 +23,7 @@ const appRoutes: Routes = [
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
     ]
   },
-  { path: '**', component: PageNotFoundComponent }
+  { path: '**', title: 'Page Not Found', component: PageNotFoundComponent }
 ];
 
 @NgModule({

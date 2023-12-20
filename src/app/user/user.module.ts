@@ -8,7 +8,7 @@ import {StoreModule} from '@ngrx/store';
 import {userReducer} from './state/user.reducer';
 
 const userRoutes: Routes = [
-  { path: 'login', component: LoginComponent }
+  { path: 'login', title: 'Login', component: LoginComponent }
 ];
 
 @NgModule({
