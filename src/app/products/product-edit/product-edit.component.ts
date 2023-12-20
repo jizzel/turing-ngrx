@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 
 import { Product } from '../product';
 import { GenericValidator } from '../../shared/generic-validator';
@@ -11,7 +11,7 @@ import { NumberValidators } from '../../shared/number.validator';
 })
 export class ProductEditComponent implements OnInit, OnChanges {
   pageTitle = 'Product Edit';
-  productForm: FormGroup;
+  productForm: UntypedFormGroup;
 
   @Input() errorMessage: string;
   @Input() selectedProduct: Product;
@@ -25,7 +25,7 @@ export class ProductEditComponent implements OnInit, OnChanges {
   private validationMessages: { [key: string]: { [key: string]: string } };
   private genericValidator: GenericValidator;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: UntypedFormBuilder) {
 
     // Defines all of the validation messages for the form.
     // These could instead be retrieved from a file or database.
