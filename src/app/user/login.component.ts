@@ -6,7 +6,7 @@ import { AuthService } from './auth.service';
 import {Store} from '@ngrx/store';
 import {getMaskUsername, UserState} from './state/user.reducer';
 import {maskUsername} from './state/user.actions';
-import {Observable} from "rxjs";
+import {Observable} from 'rxjs';
 
 @Component({
   templateUrl: './login.component.html',
