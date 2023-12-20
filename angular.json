@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "turing-ngrx:build"
+            "buildTarget": "turing-ngrx:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "turing-ngrx:build:production"
+              "buildTarget": "turing-ngrx:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "turing-ngrx:build"
+            "buildTarget": "turing-ngrx:build"
           }
         },
         "test": {

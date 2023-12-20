@@ -29,7 +29,7 @@ import { EffectsModule } from '@ngrx/effects';
     UserModule,
     AppRoutingModule,
     StoreModule.forRoot({}, {}),
-    StoreDevtoolsModule.instrument({ name: 'turing-ngrx Devtools', maxAge: 25, logOnly: environment.production }),
+    StoreDevtoolsModule.instrument({ name: 'turing-ngrx Devtools', maxAge: 25, logOnly: environment.production , connectInZone: true}),
     EffectsModule.forRoot([])
   ],
   declarations: [
