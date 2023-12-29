@@ -1,5 +1,9 @@
 {
   "name": "turing-ngrx",
+  "author": {
+    "email": "juxluvjoe@gmail.com",
+    "name": "Joseph Afriyie Attakorah"
+  },
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {

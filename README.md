@@ -2,7 +2,7 @@
 
 Experimenting with NgRx
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3. and upgraded to version *
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3. and upgraded to version 17.*
 
 ## Development server
 
